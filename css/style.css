@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald&family=Raleway&family=Roboto:wght@300;400;500;700&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700 !important;
+    font-family: 'Raleway',sans-serif;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+section{
+    padding: 80px 0px;
+    background-color: #fff;
+}
+
+
+
+
+
+/* NAVBAR */
+.navbar{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-color: #1a90c6;
+}
+
+.navbar .container{
+    
+    padding: 0px 2rem;
+    
+    margin-top: 0px !important;
+}
+
+.navbar-brand{
+    height: 90px !important;
+    padding: 10px 0px !important;
+}
+
+.navbar-brand img{
+    height: 70px !important;
+    width: 240px !important;
+}
+
+.nav-link{
+    font-size: 1.6rem !important;
+    color: white !important;
+    font-family: 'Oswald',sans-serif;
+    padding: 0px 2.5rem !important;
+    transition: 0.3s all ease;
+}
+
+.nav-link:hover{
+    color: rgb(158, 255, 86) !important;
+}
+
+.btn-brand{
+    position: relative;
+    font-size: 1.6rem !important;
+    padding: 1rem 2.5rem !important;
+    color: white !important;
+    font-family: 'Oswald',sans-serif !important;
+    border: 4px solid #0693e3 !important;
+    border-radius: 10rem !important;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+.btn-brand::before{
+    content: "";
+    background: #9eff56;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: 0.6s all ease;
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.btn-brand:hover::before{
+   height: 380%;
+}
+
+/* SLIDER */
+.slide1{
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(../image/slide1.jpg);
+}
+
+.slide2{
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(../image/slide2.jpg);
+}
+
+.slide3{
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(../image/slide3.jpg);
+}
+
+
+.leaf{
+    font-size: 5rem;
+    color: white;
+    padding: 0px .5rem;
+}
+
+
+.carousel-main{
+    height: 95rem;
+}
+
+@media screen and (max-width:750px) {
+    .carousel-item{
+        height: 40rem;
+    }
+}
+
+.slide-container{
+    height: 100%;
+}
+
+.slide-container h6{
+    font-size: 1.5rem;
+}
+
+/* ABOUT US */
+.about-icon i{
+    font-size: 8rem;
+    position: relative;
+    color: #1a90c6;
+}
+.about-icon{
+    background:  linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(26, 144, 198, 0.2) 90%);
+    display: inline-block;
+    padding: 3rem;
+    border-radius: 2rem;
+    transition: 1s ease all;
+    margin-bottom: 3rem;
+}
+
+
+.about h5{
+    color: #5c6265 !important;
+    font-size: 2.2rem;
+    font-weight: 700 !important;
+    margin-bottom: 2rem;
+}
+
+.about p{
+    color: #5c6265 !important;
+    font-size: 1.5rem;
+}
+
+.about-card:hover .about-icon{
+    background: #d2e9f4 !important;
+}
+
+.about-card:hover h5{
+    color: #1a90c6 !important;
+}
+
+/* SOLAR ENTERPRISES */
+.enterprise{
+    background: #d4faff;
+}
+
+.enterprise h4{
+    font-weight: 500 !important;
+    font-size: 2rem;
+    color: #0b5a7e !important;
+    margin-bottom: 2rem;
+}
+
+.enterprise h3{
+    font-weight: 600 !important;
+    font-size: 2.8rem;
+    color: #0693e3 !important;
+    margin-bottom: 1.5rem;
+}
+
+.enterprise p{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #5c6265 !important;
+    font-weight: 400 !important;
+}
+
+.enterprise-btn{
+    background-color: #0693e3 !important;
+}
+
+/* SERVICES */
+.services{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img.png);
+}
+
+.services h3{
+    font-weight: 600 !important;
+    font-size: 2.8rem;
+    color: #0693e3 !important;
+    margin-bottom: 2rem;
+}
+
+.services h4{
+    font-weight: 500 !important;
+    font-size: 1.5rem;
+    color: #5c6265 !important;
+    margin-bottom: 3rem;
+}
+
+.services h5{
+    font-size: 2rem;
+    color: #5c6265 !important;
+    transition: 0.5s ease all;
+}
+
+.services-icon{
+    font-size: 5rem;
+    color: #1a90c6 !important;
+}
+
+.services p{
+    font-size: 1.5rem;
+    color: #5c6265 !important;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none !important;
+}
+
+.card-main{
+    transition: 0.8s all ease;
+}
+
+.card-main:hover{
+    transform: scale(1.05);
+}
+
+
+.card:hover h5{
+    color: #0693e3 !important;
+}
+
+/* ACHIEVMENTS */
+.achievments{
+    background-color: #1a90c6;
+    position: relative;
+    z-index: -2;
+    overflow: hidden !important;
+}
+
+.achievments i{
+    position: absolute;
+    right: -10%;
+    font-size: 40rem;
+    color: rgba(255, 255, 255, 0.315);
+    z-index: -1;
+}
+
+.achievments-icon{
+    position: absolute;
+    left: -7%;
+    font-size: 40rem;
+    color: rgba(255, 255, 255, 0.315);
+    z-index: -1;
+}
+
+.achievments h3{
+    font-size: 6rem !important;
+    color: white;
+}
+
+.achievments p{
+    color: white !important;
+    font-size: 1.8rem !important;
+}
+
+/* CLIENTS */
+.clients div{
+    height: 250px;
+    width: 100%;
+}
+
+.clients img{
+    height: 250px;
+    width: 100%;
+    filter: grayscale(70);
+    transition: 0.5s ease all;
+}
+
+.clients-img:hover {
+    filter: grayscale(0);
+}
+
+.clients h1{
+    color: #0693e3 !important;
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
+    font-family: "Satisfy",sans-serif;
+}
+
+.clients h4{
+    font-size: 1.8rem !important;
+    margin-bottom: 2rem !important;
+    color: #5c6265;
+}
+
+
+.review{
+    background: url(https://assets3.lottiefiles.com/packages/lf20_bkksg8sb.json);
+    position: relative;
+    z-index: 1;
+}
+
+.review-gif{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.2;
+}
+
+.center{
+    position: relative;
+    z-index: 3;
+}
+
+.review img{
+    position: relative;
+    z-index: 3;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid #0693e3;
+    margin-bottom: 2rem;
+    padding: .2rem;
+    background-color: white;
+}
+
+
+.review h3{
+    font-weight: 700 !important;
+    position: relative;
+    z-index: 3;
+    color: #1a90c6 !important;
+    font-size: 2rem !important;
+}
+
+.review h5{
+    position: relative;
+    z-index: 3;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.review h1{
+    position: relative;
+    z-index: 3;
+    color: #0693e3 !important;
+    font-size: 4rem !important;
+    font-family: "Satisfy",sans-serif;
+}
+
+.review h2{
+    position: relative;
+    z-index: 3;
+    font-size: 1.8rem;
+    color: #5c6265;
+}
+
+.rating i{
+    font-size: 1.6rem;
+    color: rgb(223, 127, 18);
+}
+
+.review p{
+    font-size: 1.4rem;
+    color: #5c6265;
+}
+
+/* PARALLAX */
+.parallax{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../image/slide1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right !important;
+}
+
+.parallax p{
+    font-size: 2rem;
+    color: white;
+}
+
+.parallax p span{
+    font-size: 8rem;
+    color: #0693e3;
+}
+
+.box{
+    border-radius: 2rem;
+background-color: #0693e3 !important;
+    padding: 10rem !important;
+    box-shadow: rgba(255, 255, 255, 0.7) 0px 7px 29px 0px;
+}
+
+.i1{
+    color: #9eff56;
+    font-size: 3.5rem;
+    margin-right: 1rem;
+}
+
+.i2{
+    color: #9eff56;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+}
+@media screen and (max-width:756px) {
+    .box{
+        padding: 5rem !important;
+    }
+}
+
+/* SOLAR-Q */
+
+.solar-q{
+    background-image: url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/things-trans-img.jpg?id=63);
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: left !important;
+}
+
+.solar-q img{
+    border-radius: 5rem;
+}
+
+.solar-q h2{
+    color: #0693e3;
+    font-size: 2.6rem !important;
+    margin-bottom: 1.7rem;
+}
+
+
+
+.accordion-item{
+    border: none !important;
+    background-color: transparent !important;
+    margin-top: 1.7rem;
+}
+
+.ac-1{
+    margin-top: 5rem !important;
+}
+
+.solar-q h4{
+    color: #5c6265;
+    font-size: 1.5rem;
+}
+
+.accordion-item h3 button{
+    font-size: 1.8rem;
+    background-color: transparent !important;
+    font-weight: 700 !important;
+    color: #5c6265;
+}
+
+.accordion-body{
+    font-size: 1.5rem;
+    padding: 2rem !important;
+    font-weight: 500 !important;
+}
+
+.doubt{
+    font-size: 2.2rem;
+    color: #5c6265;
+    margin-top: 7rem;
+}
+
+.solar-btn{
+    color: #1a90c6 !important;
+    margin-top: 2rem;
+    position: relative !important;
+}
+
+.solar-btn:hover{
+    background-color:#1a90c6 !important;
+    color: white !important;
+}
+
+.solar-btn span{
+    border-left: #1a90c6 2px solid;
+    padding-left: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.solar-btn:hover span{
+    border-left: #ffffff 2px solid;
+}
+
+@media screen and (max-width:1186px) {
+    .solar-q2{
+        background-color: white !important;
+        padding: 4rem !important;
+        border-radius: 5rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .solar-q{
+       background-color: #c6eaff !important;
+       background-image: none !important;
+    }
+    
+}
+
+/* OUR PRODUCTS */
+.product{
+    background-color: #9eff56;
+}
+
+.product1{
+    border-radius: 1rem !important;
+    padding: 2rem !important;
+}
+
+.product-img{
+    height: 400px !important;
+    height: 100%;
+    width: 100%;
+    padding: 1rem !important;
+    background-color: white !important;
+}
+
+.product img{
+    height: 100%;
+    width: 100%;
+}
+
+.product-body h2{
+    font-size: 2rem !important;
+    color: #5c6265;
+}
+
+.product-body{
+    background-color: white !important;
+    padding: 1rem !important;
+    width: 100%;
+}
+
+.product-btn{
+color: #1a90c6 !important;
+padding: 5px 30px !important;
+margin-top: 0.5rem !important;
+}
+
+.product-btn:hover{
+   background-color :#1a90c6 !important;
+    color: white !important;
+}
+
+.product h1{
+    margin-bottom: 2rem;
+    color: #0693e3 !important;
+    font-size: 4rem !important;
+    font-family: "Satisfy",sans-serif;
+}
+
+/* FOOTER */
+footer{
+    padding: 80px 0px;
+    background-color: #0693e3;
+}
+
+.foot-1{
+    padding: 0px 4rem !important;
+}
+
+.foot-2{
+    padding: 0px 4rem !important;
+}
+
+.foot-1 p{
+    margin-top: 1.5rem;
+    font-size: 1.4rem !important;
+    color: rgb(255, 255, 255,0.6) !important;
+}
+
+.social{
+    margin-top: 1.5rem;
+}
+
+.social i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255,0.6) !important;
+    transition: 0.5s ease all;
+}
+
+.social i:hover{
+    color: white !important;
+}
+
+.foot-2 h3{
+color: white;
+margin-bottom: 2rem;
+font-size: 2.3rem;
+}
+
+.foot-2 label{
+    font-size: 1.5rem !important;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-2 input{
+    font-size: 1.5rem;
+}
+
+.foot-2 textarea{
+    font-size: 1.5rem;
+} 
+
+::placeholder{
+    font-size: 1.5rem;
+}
+
+.foot-2-btn{
+    color: #1a90c6 !important;
+    margin-top: 2rem;
+    position: relative !important;
+    background-color: white !important;
+    border: 4px solid #9eff56 !important;
+    transition: 0.5s ease all;
+}
+
+.foot-2-btn:hover{
+    color: white !important;
+    background-color: #1a90c6 !important;
+}
+
+.contact-foot i{
+    font-size: 2rem;
+    color: white !important;
+    margin-right: 0.5rem;
+}
+
+.contact-foot a{
+    font-size: 1.6rem !important;
+    color: white !important;
+}
+
+.foot-3 h3{
+    color: white;
+margin-bottom: 2rem;
+font-size: 2.3rem;
+}
+
+.foot-3 p{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 0.5s ease all;
+    color: white;
+    font-weight: 600;
+}
+
+.foot-3 p:hover{
+    background-color: white;
+    color: #1a90c6 !important;
+}
